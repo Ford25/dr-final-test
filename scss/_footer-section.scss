@@ -1,0 +1,33 @@
+
+.footer-section{
+    width: 100%;
+    background-color: #D9D9D9;
+    min-height: 63.28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 16px;
+        text-align: center;
+        color: #505050;       
+    }
+}
+
+@media(max-width: 768px){
+    .footer-section{
+
+        padding-left: 45px;
+        padding-right: 45px;
+
+        h1{
+            font-size: 12px;
+            line-height: 15px;
+               
+        }
+    }
+}

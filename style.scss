@@ -1,0 +1,38 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFFF;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+html::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: #505050;
+    border-radius: 10px;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: #FFD706;  
+    border-radius: 10px;
+  }
+  
+  
+
+
+
+@import "scss/hero-section";
+@import "scss/nav-bar";
+@import "scss/services-section";
+@import "scss/contact-section";
+@import "scss/footer-section";

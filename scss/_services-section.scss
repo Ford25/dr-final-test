@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&family=Poppins:wght@700&display=swap');
+
+.services-section{
+   
+    width: 100%;
+    height: auto;
+    max-width: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+
+    .wheel-design{
+        position: absolute;
+        top: 0;
+        right: 0;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    .car-image{
+        margin-top: -170px;
+        pointer-events: none;
+        
+        
+    }
+
+    .our-services{
+
+        width: 100%;
+        padding-left: 88px;
+        padding-right: 88px;
+        padding-top: 164px;
+
+        h1{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 60px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #000000;            
+        }
+
+        .services-list{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            padding-top: 61px;
+            
+        
+            .service{
+                width: 370px;
+                min-height: 472.76px;
+                background: #f0eded;
+                box-shadow: 10px 32px 72px rgba(15, 13, 35, 0.04);
+                border-radius: 10px;  
+                margin-bottom: 89px; 
+                margin-left: 27px;
+                margin-right: 27px;  
+                cursor: pointer;
+                
+                
+                img{
+                    max-width: 370px;
+                    height: 256px;
+                    border-radius: 10px;
+                }
+
+                .text{
+
+                    padding: 26px 37px;
+
+                    .service-title{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 200%;
+                        letter-spacing: -0.015em;
+                        color: #000000;    
+                        text-align: left;                    
+                    }
+
+                    h2{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 160%;
+                        letter-spacing: -0.015em;
+                        color: #7C7B90;
+                        
+                    }
+                }
+            }
+
+            .service:hover{
+                background-color: #D9D9D9;
+                .text{
+                    h2{
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .services-section{
+        .car-image{
+            width: 70%;
+            margin-top: -15%;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .services-section{
+
+        .wheel-design{
+            position: absolute;
+            top: 0;
+            right: 0;
+            pointer-events: none;
+            width: 50%;
+        }
+        .our-services{
+
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 120px;
+
+            h1{
+                font-size: 40px;
+                line-height: 60px;
+            }
+
+            .services-list{
+
+                .service{
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 50px; 
+                    margin-left: 0;
+                    margin-right: 0;  
+                    cursor: pointer;
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                        border-radius: 10px;
+                    }
+
+                    .text{
+                        padding: 26px 20px;
+
+                        .service-title{
+                            font-size: 20px;
+                            line-height: 110%;
+                            text-align: center;    
+                            margin-bottom: 20px;              
+                        }
+    
+                        h2{
+                            font-size: 18px;
+                            line-height: 160%;
+                            text-align: center;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

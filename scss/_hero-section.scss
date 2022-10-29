@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.hero-section{ 
+    height: 100vh;
+    width: 100%;
+    max-width: 2000px;
+    background-image: url(/assets/bg_drcars.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .texts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -70px;
+
+
+    img{
+        pointer-events: none;
+        width: 75%;
+    }
+
+       h1{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 82px;
+        color: #FFD706;        
+       } 
+
+       h2{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 44px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 480px;        
+       }
+    }
+
+}
+
+@media(max-width: 550px){
+    .hero-section{
+        .texts{
+            margin-top: -40px;
+            padding:0 40px;
+            h1{
+                font-weight: 700;
+                font-size: 48px;
+            }
+
+            img{
+                width: 70%;
+            }
+
+            h2{
+                font-size: 22px;
+                line-height: 30px;               
+            }
+        }
+    }
+}
